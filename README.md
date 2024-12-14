@@ -93,10 +93,6 @@ Examples:
 - `chore: cleanup deps`
 - `perf: reduce bundle size`
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
 ## License
 
 MIT
