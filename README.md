@@ -26,7 +26,7 @@ pip install -r requirements.txt
 3. Create a `.env` file in the project root:
 ```env
 GITHUB_TOKEN=your_github_token_here
-GITHUB_REPO=calcom/cal.com // write the name of your fork repo if you are using a fork
+GITHUB_REPO=calcom/cal.com # write the name of your fork repo if you are using a fork
 ```
 
 ## Usage
