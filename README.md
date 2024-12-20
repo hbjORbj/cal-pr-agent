@@ -55,7 +55,6 @@ Arguments:
 Options:
   -t, --title TEXT      Custom PR title (optional, generated from branch name if not provided)
   --ticket TEXT         Linear CAL ticket number (optional)
-  --test TEXT          Link to provide for testing (optional)
   --base TEXT          Base branch (default: main)
   -d, --draft          Create as draft PR
 ```
@@ -66,8 +65,8 @@ Examples of PR creation:
 # Simple usage
 python pr.py create feat/new-onboarding
 
-# With ticket number and testing steps
-python pr.py create perf/speed-update --ticket 123 --test "Check homepage load time"
+# With ticket number
+python pr.py create perf/speed-update --ticket 1234
 
 # Create draft PR
 python pr.py create fix/bug-fix -d
