@@ -26,7 +26,7 @@ PR_TEMPLATE = """## What does this PR do?
 
 - Please use the latest Vercel preview and test please 🙏."""
 
-VALID_PREFIXES = {"feat", "fix", "chore", "perf"}
+VALID_PREFIXES = {"feat", "fix", "chore", "perf", "refactor"}
 
 
 class PRCreator:
@@ -39,7 +39,7 @@ class PRCreator:
     def generate_title_from_branch(self, branch):
         """Generate standardized PR title from branch name"""
         # Extract prefix and description from branch name
-        match = re.match(r"^(feat|fix|chore|perf)/(.+)$", branch)
+        match = re.match(r"^(feat|fix|chore|perf|refactor)/(.+)$", branch)
         if not match:
             raise ValueError(
                 f"Branch name must start with one of {VALID_PREFIXES} followed by '/' and description. "

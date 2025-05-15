@@ -10,7 +10,7 @@ A simple CLI tool to automate Pull Request creation and management for Cal.com w
 - Updates multiple PRs with main branch in bulk
 - Detects and reports merge conflicts
 - Configurable via environment variables
-- Branch name validation (feat/fix/chore/perf)
+- Branch name validation (feat/fix/chore/perf/refactor)
 
 ## Installation
 
@@ -50,7 +50,7 @@ Full options for PR creation:
 python pr.py create <branch> [options]
 
 Arguments:
-  branch                Branch name (must start with feat/fix/chore/perf)
+  branch                Branch name (must start with feat/fix/chore/perf/refactor)
 
 Options:
   -t, --title TEXT      Custom PR title (optional, generated from branch name if not provided)
